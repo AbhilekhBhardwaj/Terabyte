@@ -127,7 +127,7 @@ export default function Home() {
             gsap.to(".hero-img", { scale: 1, duration: 2, ease: "hop" });
           },
           onComplete: () => {
-            gsap.set(".loader", { pointerEvents: "none" });
+            gsap.set(".loader", { pointerEvents: "none", display: "none" });
             setLoaderAnimating(false);
           },
         },
@@ -174,7 +174,7 @@ export default function Home() {
               </h1>
             </div>
             <div className="word" id="word-2">
-              <h1>box</h1>
+              <h1>byte</h1>
             </div>
           </div>
           <div className="divider"></div>
