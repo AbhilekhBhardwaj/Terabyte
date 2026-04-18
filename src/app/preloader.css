@@ -51,6 +51,7 @@
   font-size: 2rem;
   color: var(--base-300);
   letter-spacing: -0.05rem;
+  line-height: 1.3;
 }
 
 .loader .divider {

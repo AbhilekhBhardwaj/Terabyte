@@ -76,7 +76,7 @@ const TopBar = () => {
             navigateWithTransition("/");
           }}
         >
-          <img src="/logos/terabyte-2.png" alt="" />
+          <img src="/logos/terabox-2.png" alt="" />
         </a>
       </div>
       <div className="top-bar-cta">

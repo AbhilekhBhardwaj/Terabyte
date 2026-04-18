@@ -374,7 +374,7 @@ export default function Home() {
       
       <CTAWindow
         img="/home/home-cta-window.jpg"
-        header="Terabyte"
+        header="Terabox"
         callout="Ship faster. Scale smarter."
         description="From MVP to enterprise, we bring the right stack, process, and team to ship reliably—then iterate with data."
       />
