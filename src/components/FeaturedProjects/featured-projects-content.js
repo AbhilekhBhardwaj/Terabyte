@@ -4,28 +4,28 @@ const featuredProjectsContent = [
     title: "SaaS Growth Website",
     description:
       "Responsive Next.js site with CMS, analytics, and SEO foundations. Modular components, A/B‑ready sections, and 90+ Lighthouse scores.",
-    image: "/featured-projects/featured-work-1.jpg",
+    image: "/featured-projects/featured-work-1.png",
   },
   {
     info: "B2B dashboard with role‑based access and audit logs",
     title: "Analytics Web App",
     description:
       "React + Node app with charts, filters, and exports. Clean IA, keyboard navigation, and robust test coverage.",
-    image: "/featured-projects/featured-work-2.jpg",
+    image: "/featured-projects/featured-work-2.png",
   },
   {
     info: "Cross‑platform app for bookings and notifications",
     title: "Mobile Booking App",
     description:
       "Flutter/React Native app with offline cache and push messaging. CI/CD to stores, analytics hooks ready.",
-    image: "/featured-projects/featured-work-3.jpg",
+    image: "/featured-projects/featured-work-3.png",
   },
   {
     info: "Design system and component library for fast shipping",
     title: "Design System Kit",
     description:
       "Tokenized typography, color, and spacing with reusable UI components. Storybook docs and Figma handoff.",
-    image: "/featured-projects/featured-work-4.jpg",
+    image: "/featured-projects/featured-work-4.png",
   },
 ];
 
