@@ -24,6 +24,7 @@ export default function Home() {
   const tagsRef = useRef(null);
   const [showPreloader, setShowPreloader] = useState(isInitialLoad);
   const [loaderAnimating, setLoaderAnimating] = useState(false);
+  const [showLoaderDivider, setShowLoaderDivider] = useState(false);
   const lenis = useLenis();
 
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function Home() {
 
     if (showPreloader) {
       setLoaderAnimating(true);
+      setShowLoaderDivider(false);
       const counts = document.querySelectorAll(".count");
 
       counts.forEach((count, index) => {
@@ -94,11 +96,17 @@ export default function Home() {
         "<"
       );
 
+      tl.call(() => {
+        setShowLoaderDivider(true);
+      });
+
       tl.to(".divider", {
-        scaleY: "100%",
+        opacity: 1,
+        scaleY: 1,
         duration: 1,
-        onComplete: () =>
-          gsap.to(".divider", { opacity: 0, duration: 0.3, delay: 0.3 }),
+        onComplete: () => {
+          gsap.to(".divider", { opacity: 0, duration: 0.3, delay: 0.3 });
+        },
       });
 
       tl.to("#word-1 h1", {
@@ -128,6 +136,7 @@ export default function Home() {
           },
           onComplete: () => {
             gsap.set(".loader", { pointerEvents: "none", display: "none" });
+            setShowLoaderDivider(false);
             setLoaderAnimating(false);
           },
         },
@@ -177,7 +186,7 @@ export default function Home() {
               <h1>byte</h1>
             </div>
           </div>
-          <div className="divider"></div>
+          {showLoaderDivider && <div className="divider"></div>}
           <div className="spinner-container">
             <div className="spinner"></div>
           </div>
